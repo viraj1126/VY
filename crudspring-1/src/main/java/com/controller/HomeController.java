@@ -23,6 +23,7 @@ public class HomeController {
 		List<Student> list = si.getAllStudents();
 		
 		return list;
+		
 	}
 	
 	@DeleteMapping("/student/{id}")
