@@ -30,9 +30,13 @@ public class HomeController {
 		
 		
 	}
-
 	
-
+	@PutMapping("/student/{id}")
+	public Student updateData(@RequestBody Student s,@PathVariable int id) 
+	{
+		return si.updateData(s,id);
+		
+	}
 	
 	@DeleteMapping("/student/{id}")
 	public void delete(@PathVariable int id)
