@@ -19,4 +19,14 @@ public class Serviceimpl implements Servicei{
 		
 	}
 
+
+	@Override
+	public List<Student> getAllStudents()
+	{
+		
+		List<Student> list = (List<Student>) sr.findAll();
+		return list;
+	}
+
+
 }

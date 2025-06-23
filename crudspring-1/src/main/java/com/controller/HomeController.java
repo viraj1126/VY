@@ -19,13 +19,27 @@ public class HomeController {
 	@Autowired
 	Servicei si;
 	
+
+	@GetMapping("/students")
+	public List<Student> Students()
+	{
+		List<Student> list = si.getAllStudents();
+		System.out.println(list);
+		
+		return list;
+		
+		
+	}
+
 	
+
 	
 	@DeleteMapping("/student/{id}")
 	public void delete(@PathVariable int id)
 	{
 		
 		delete(id);
+		
 	}
 	
 }
