@@ -25,6 +25,7 @@ public class HomeController {
 		
 		return list;
 		
+		
 	}
 	
 	@DeleteMapping("/student/{id}")
