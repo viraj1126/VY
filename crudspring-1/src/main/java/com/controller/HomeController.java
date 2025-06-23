@@ -21,6 +21,7 @@ public class HomeController {
 	public List<Student> Students()
 	{
 		List<Student> list = si.getAllStudents();
+		System.out.println(list);
 		
 		return list;
 		
