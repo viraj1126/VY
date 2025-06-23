@@ -30,6 +30,7 @@ public class HomeController {
 	{
 		
 		delete(id);
+		
 	}
 	
 }
