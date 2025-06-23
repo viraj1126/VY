@@ -1,7 +1,10 @@
 package com.serviceimpl;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 
+import com.model.Student;
 import com.repository.StudentRepository;
 import com.service.Servicei;
 
@@ -16,5 +19,12 @@ public class Serviceimpl implements Servicei{
 		
 		sr.deleteById(id);
 		
+	}
+
+	@Override
+	public List<Student> getAllStudents()
+	{
+		List<Student> list = (List<Student>) sr.findAll();
+		return list;
 	}
 }
