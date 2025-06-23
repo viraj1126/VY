@@ -9,4 +9,12 @@ public class Serviceimpl implements Servicei{
 
 	@Autowired
 	StudentRepository sr;
+
+	@Override
+	public void delete(int id)
+	{
+		
+		sr.deleteById(id);
+		
+	}
 }
