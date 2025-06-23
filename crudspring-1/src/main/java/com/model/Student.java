@@ -7,6 +7,9 @@ import jakarta.persistence.Id;
 public class Student {
 	@Id
 	private int id;
+	private String name;
+	private String address;
+
 	public int getId() {
 		
 		return id;
@@ -26,7 +29,5 @@ public class Student {
 	public void setAddress(String address) {
 		this.address = address;
 	}
-	private String name;
-	private String address;
-
+	
 }

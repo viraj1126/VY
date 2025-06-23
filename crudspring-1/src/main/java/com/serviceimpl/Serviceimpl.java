@@ -1,7 +1,5 @@
 package com.serviceimpl;
 
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 
 import com.model.Student;
@@ -21,6 +19,7 @@ public class Serviceimpl implements Servicei{
 		
 	}
 
+
 	@Override
 	public List<Student> getAllStudents()
 	{ 
@@ -29,4 +28,6 @@ public class Serviceimpl implements Servicei{
 		List<Student> list = (List<Student>) sr.findAll();
 		return list;
 	}
+
+
 }
