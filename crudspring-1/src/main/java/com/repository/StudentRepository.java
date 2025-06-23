@@ -9,4 +9,5 @@ import com.model.Student;
 public interface StudentRepository extends CrudRepository<Student, Integer>{
 
 	
+	
 }

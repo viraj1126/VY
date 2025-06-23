@@ -32,7 +32,11 @@ public class HomeController {
 	public void delete(@PathVariable int id)
 	{
 		
-		delete(id);
+		
+		
+		delete(id); 
+		
+		
 		
 	}
 	
